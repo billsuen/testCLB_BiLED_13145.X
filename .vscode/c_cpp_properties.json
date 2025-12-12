@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "PIC16F13145_XC8",
+            "compilerPath": "C:/Program Files/Microchip/xc8/v3.00/bin/xc8-cc.exe",
+            "cStandard": "c89",
+            "intelliSenseMode": "gcc-x86",
+            "includePath": [
+                "${workspaceFolder}/mcc_generated_files",
+                "${workspaceFolder}/src",
+                "C:/Program Files/Microchip/xc8/v3.00/pic/include"
+            ],
+            "defines": [
+                "__XC8",
+                "__16F13145"
+            ]
+        }
+    ],
+    "version": 4
+}

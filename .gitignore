@@ -1,0 +1,33 @@
+# Build outputs and debug folders
+debug/
+_build/
+*.map
+*.mem
+*.hex
+*.elf
+*.cof
+*.lst
+*.rlf
+*.i
+*.p1
+*.o
+
+# CMake build files
+cmake/**/.generated/
+cmake/**/CMakeFiles/
+cmake/**/CMakeCache.txt
+cmake/**/build.ninja
+cmake/**/compile_commands.json
+cmake/**/cmake_install.cmake
+cmake/**/CMakePresets.json
+
+# NetBeans (MPLAB X) private configuration (排除個人私有設定)
+nbproject/private/
+
+# Misc temporary files
+*.log
+*.tmp
+
+# OS common ignore files
+.DS_Store
+Thumbs.db

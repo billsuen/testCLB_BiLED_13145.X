@@ -1,0 +1,5 @@
+D:/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/_build/testCLB_BiLED_13145/default/CMakeFiles/testCLB_BiLED_13145_default_default_XC8_assemblePreprocess.dir
+D:/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/_build/testCLB_BiLED_13145/default/CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir
+D:/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/_build/testCLB_BiLED_13145/default/CMakeFiles/testCLB_BiLED_13145_default_image_927TkNDI.dir
+D:/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/_build/testCLB_BiLED_13145/default/CMakeFiles/edit_cache.dir
+D:/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/_build/testCLB_BiLED_13145/default/CMakeFiles/rebuild_cache.dir

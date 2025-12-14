@@ -32,6 +32,7 @@
     EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
     THIS SOFTWARE.
 */
+#include "mcc_generated_files/system/pins.h"
 #include "mcc_generated_files/system/system.h"
 #include "config_16F13145.h"
 
@@ -63,6 +64,11 @@ int main(void)
 
     while(1)
     {
+		if(!initFlag)
+			IND_LAT = 0;
+		else
+			IND_LAT = 1;
+		
 		if(lowBattFlag)
 			IND_LAT = 0;
     }    

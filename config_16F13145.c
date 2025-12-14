@@ -19,10 +19,9 @@ void USER_TMR0_ISR(void)
 	if(initCnt >= 1000)
 	{
 		initCnt = 1000;
-		IND_LAT = 1;
+		initFlag = 1;
 	}
-	else
-		IND_LAT = 0;
+
 }
 
 void USER_ADC_THRESHOLD_ISR(void)

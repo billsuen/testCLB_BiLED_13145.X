@@ -87,6 +87,44 @@
 #define RED_SetOpenDrain()       do { ODCONAbits.ODCA1 = 1; } while(0)
 #define RED_SetAnalogMode()      do { ANSELAbits.ANSA1 = 1; } while(0)
 #define RED_SetDigitalMode()     do { ANSELAbits.ANSA1 = 0; } while(0)
+// get/set IO_RA2 aliases
+#define VR_TRIS                 TRISAbits.TRISA2
+#define VR_LAT                  LATAbits.LATA2
+#define VR_PORT                 PORTAbits.RA2
+#define VR_WPU                  WPUAbits.WPUA2
+#define VR_OD                   ODCONAbits.ODCA2
+#define VR_ANS                  ANSELAbits.ANSA2
+#define VR_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
+#define VR_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
+#define VR_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
+#define VR_GetValue()           PORTAbits.RA2
+#define VR_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
+#define VR_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
+#define VR_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
+#define VR_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
+#define VR_SetPushPull()        do { ODCONAbits.ODCA2 = 0; } while(0)
+#define VR_SetOpenDrain()       do { ODCONAbits.ODCA2 = 1; } while(0)
+#define VR_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
+#define VR_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
+// get/set IO_RC0 aliases
+#define IND_TRIS                 TRISCbits.TRISC0
+#define IND_LAT                  LATCbits.LATC0
+#define IND_PORT                 PORTCbits.RC0
+#define IND_WPU                  WPUCbits.WPUC0
+#define IND_OD                   ODCONCbits.ODCC0
+#define IND_ANS                  ANSELCbits.ANSC0
+#define IND_SetHigh()            do { LATCbits.LATC0 = 1; } while(0)
+#define IND_SetLow()             do { LATCbits.LATC0 = 0; } while(0)
+#define IND_Toggle()             do { LATCbits.LATC0 = ~LATCbits.LATC0; } while(0)
+#define IND_GetValue()           PORTCbits.RC0
+#define IND_SetDigitalInput()    do { TRISCbits.TRISC0 = 1; } while(0)
+#define IND_SetDigitalOutput()   do { TRISCbits.TRISC0 = 0; } while(0)
+#define IND_SetPullup()          do { WPUCbits.WPUC0 = 1; } while(0)
+#define IND_ResetPullup()        do { WPUCbits.WPUC0 = 0; } while(0)
+#define IND_SetPushPull()        do { ODCONCbits.ODCC0 = 0; } while(0)
+#define IND_SetOpenDrain()       do { ODCONCbits.ODCC0 = 1; } while(0)
+#define IND_SetAnalogMode()      do { ANSELCbits.ANSC0 = 1; } while(0)
+#define IND_SetDigitalMode()     do { ANSELCbits.ANSC0 = 0; } while(0)
 /**
  * @ingroup  pinsdriver
  * @brief GPIO and peripheral I/O initialization

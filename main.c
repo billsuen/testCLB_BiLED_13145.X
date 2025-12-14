@@ -33,6 +33,7 @@
     THIS SOFTWARE.
 */
 #include "mcc_generated_files/system/system.h"
+#include "config_16F13145.h"
 
 /*
     Main application
@@ -46,19 +47,23 @@ int main(void)
     // Use the following macros to: 
 
     // Enable the Global Interrupts 
-    //INTERRUPT_GlobalInterruptEnable(); 
+    INTERRUPT_GlobalInterruptEnable(); 
 
     // Disable the Global Interrupts 
     //INTERRUPT_GlobalInterruptDisable(); 
 
     // Enable the Peripheral Interrupts 
-    //INTERRUPT_PeripheralInterruptEnable(); 
+    INTERRUPT_PeripheralInterruptEnable(); 
 
     // Disable the Peripheral Interrupts 
     //INTERRUPT_PeripheralInterruptDisable(); 
 
+	TMR0_PeriodMatchCallbackRegister(USER_TMR0_ISR);
+	ADC_ThresholdCallbackRegister(USER_ADC_THRESHOLD_ISR);
 
     while(1)
     {
+		if(lowBattFlag)
+			IND_LAT = 0;
     }    
 }

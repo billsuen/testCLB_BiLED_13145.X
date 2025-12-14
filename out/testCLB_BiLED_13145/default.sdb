@@ -3,6 +3,84 @@
 [d edition pro ]
 [d chip 16F13145 ]
 [d frameptr 6 ]
+"166 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\adc\src\adc.c
+[e E6511 . `uc
+ADC_CHANNEL_ADCG1 3
+ADC_CHANNEL_VSS 58
+ADC_CHANNEL_TEMP 59
+ADC_CHANNEL_DAC1 60
+ADC_CHANNEL_FVR_BUF1 62
+ADC_CHANNEL_FVR_BUF2 63
+ADC_CHANNEL_ANA2 2
+]
+"191
+[e E6520 . `uc
+ADC_BASIC 0
+ADC_SERIES_ACCUMULATE 1
+ADC_SERIES_AVERAGE 2
+ADC_BURST_AVERAGE 3
+ADC_LOW_PASS_FILTER 4
+]
+"196
+[e E6534 . `uc
+ADC_NEVER_INTERRUPT 0
+ADC_BELOW_LOWER_THRESHOLD 1
+ADC_ABOVE_LOWER_THRESHOLD 2
+ADC_INSIDE_LOWER_AND_UPPER_THRESHOLD 3
+ADC_OUTSIDE_LOWER_AND_UPPER_THRESHOLD 4
+ADC_BELOW_UPPER_THRESHOLD 5
+ADC_ABOVE_UPPER_THRESHOLD 6
+ADC_ALWAYS_INTERRUPT 7
+]
+"335
+[e E6573 . `uc
+ADC_NOT_CONVERTING 0
+ADC_1ST_PRECHARGE 1
+ADC_1ST_ACQUISITION 2
+ADC_1ST_CONVERSION 3
+ADC_COMPUTATION_SUSPENDED_BETWEEN_1ST_AND_2ND_SAMPLE 4
+ADC_2ND_PRECHARGE 5
+ADC_2ND_ACQUISITION 6
+ADC_2ND_CONVERSION 7
+]
+"340
+[e E6527 . `uc
+ADC_FIRST_DERIVATIVE_OF_SINGLE_MEASUREMENT 0
+ADC_ACTUAL_RESULT_VS_SETPOINT 1
+ADC_ACTUAL_RESULT_VS_FILTERED_VALUE 2
+ADC_FIRST_DERIVATIVE_OF_FILTERED_VALUE 4
+ADC_FILTERED_VALUE_VS_SETPOINT 5
+]
+"360
+[e E6544 . `uc
+ADC_TRIGGER_SOURCE_DISABLED 0
+ADC_TRIGGER_SOURCE_ADACTPPS 1
+ADC_TRIGGER_SOURCE_TMR0 2
+ADC_TRIGGER_SOURCE_TMR1 3
+ADC_TRIGGER_SOURCE_TMR2 4
+ADC_TRIGGER_SOURCE_CCP1 8
+ADC_TRIGGER_SOURCE_CCP2 9
+ADC_TRIGGER_SOURCE_C1OUT 19
+ADC_TRIGGER_SOURCE_C2OUT 20
+ADC_TRIGGER_SOURCE_IOC 21
+ADC_TRIGGER_SOURCE_CLC1 22
+ADC_TRIGGER_SOURCE_CLC2 23
+ADC_TRIGGER_SOURCE_CLC3 24
+ADC_TRIGGER_SOURCE_CLC4 25
+ADC_TRIGGER_SOURCE_ADERRH 29
+ADC_TRIGGER_SOURCE_ADRESH 30
+ADC_TRIGGER_SOURCE_ADPCH 31
+ADC_TRIGGER_SOURCE_PWM1OUT 32
+ADC_TRIGGER_SOURCE_PWM2OUT 33
+ADC_TRIGGER_SOURCE_CLB1OUT0 34
+ADC_TRIGGER_SOURCE_CLB1OUT1 35
+ADC_TRIGGER_SOURCE_CLB1OUT2 36
+ADC_TRIGGER_SOURCE_CLB1OUT3 37
+ADC_TRIGGER_SOURCE_CLB1OUT4 38
+ADC_TRIGGER_SOURCE_CLB1OUT5 39
+ADC_TRIGGER_SOURCE_CLB1OUT6 40
+ADC_TRIGGER_SOURCE_CLB1OUT7 41
+]
 "53 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\nvm\src\nvm.c
 [e E6509 . `uc
 NVM_OK 0
@@ -58,8 +136,22 @@ TMR2_PWM2OUT 30
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 c:\PROGRA~1\MICROC~1\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"41 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\main.c
+"8 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\config_16F13145.c
+[v _USER_TMR0_ISR USER_TMR0_ISR `(v  1 e 1 0 ]
+"28
+[v _USER_ADC_THRESHOLD_ISR USER_ADC_THRESHOLD_ISR `(v  1 e 1 0 ]
+"42 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\main.c
 [v _main main `(i  1 e 2 0 ]
+"44 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\adc\src\adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"171
+[v _ADC_ConversionStart ADC_ConversionStart `(v  1 e 1 0 ]
+"385
+[v _ADC_ThresholdCallbackRegister ADC_ThresholdCallbackRegister `(v  1 e 1 0 ]
+"410
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+"423
+[v _ADC_ThresholdISR ADC_ThresholdISR `(v  1 e 1 0 ]
 "45 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\clb\src\clb1.c
 [v _CLB1_Initialize CLB1_Initialize `(v  1 e 1 0 ]
 "103
@@ -86,28 +178,38 @@ TMR2_PWM2OUT 30
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 "40 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\system\src\interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
-"62
+"59
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"96
 [v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
-"71
+"105
 [v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
-"75
+"109
 [v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
 "38 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\system\src\pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "39 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\system\src\system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"45 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"126
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"135
+[v _TMR0_PeriodMatchCallbackRegister TMR0_PeriodMatchCallbackRegister `(v  1 e 1 0 ]
+"140
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
 "50 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "161
 [v _TMR2_DefaultPeriodMatchCallback TMR2_DefaultPeriodMatchCallback `(v  1 s 1 TMR2_DefaultPeriodMatchCallback ]
-[s S390 . 1 `uc 1 INTEDG 1 0 :1:0 
+[s S72 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
 "354 C:/Users/bills/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.28.431/xc8\pic\include\proc/pic16f13145.h
-[u S395 . 1 `S390 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES395  1 e 1 @11 ]
+[u S77 . 1 `S72 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES77  1 e 1 @11 ]
 "525
 [v _TRISA TRISA `VEuc  1 e 1 @18 ]
 "570
@@ -120,15 +222,27 @@ TMR2_PWM2OUT 30
 [v _LATB LATB `VEuc  1 e 1 @25 ]
 "755
 [v _LATC LATC `VEuc  1 e 1 @26 ]
-[s S446 . 1 `uc 1 INTF 1 0 :1:0 
+[s S29 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"772
+[u S38 . 1 `S29 1 . 1 0 ]
+[v _LATCbits LATCbits `VES38  1 e 1 @26 ]
+[s S1034 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "830
-[u S451 . 1 `S446 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES451  1 e 1 @140 ]
-[s S203 . 1 `uc 1 NVMIF 1 0 :1:0 
+[u S1039 . 1 `S1034 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1039  1 e 1 @140 ]
+[s S800 . 1 `uc 1 NVMIF 1 0 :1:0 
 `uc 1 CRCIF 1 0 :1:1 
 `uc 1 SCANIF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -138,26 +252,40 @@ TMR2_PWM2OUT 30
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "867
-[u S212 . 1 `S203 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES212  1 e 1 @141 ]
-[s S561 . 1 `uc 1 . 1 0 :2:0 
+[u S809 . 1 `S800 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES809  1 e 1 @141 ]
+[s S1302 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TMR2IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 CCP1IF 1 0 :1:5 
 `uc 1 CCP2IF 1 0 :1:6 
 ]
 "921
-[u S567 . 1 `S561 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES567  1 e 1 @142 ]
-[s S60 . 1 `uc 1 CLB1IF0 1 0 :1:0 
+[u S1308 . 1 `S1302 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1308  1 e 1 @142 ]
+[s S209 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 ADTIF 1 0 :1:1 
+]
+"1050
+[u S212 . 1 `S209 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES212  1 e 1 @146 ]
+[s S657 . 1 `uc 1 CLB1IF0 1 0 :1:0 
 `uc 1 CLB1IF1 1 0 :1:1 
 `uc 1 CLB1IF2 1 0 :1:2 
 `uc 1 CLB1IF3 1 0 :1:3 
 ]
 "1078
-[u S65 . 1 `S60 1 . 1 0 ]
-[v _PIR7bits PIR7bits `VES65  1 e 1 @147 ]
-[s S224 . 1 `uc 1 NVMIE 1 0 :1:0 
+[u S662 . 1 `S657 1 . 1 0 ]
+[v _PIR7bits PIR7bits `VES662  1 e 1 @147 ]
+[s S1065 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"1116
+[u S1070 . 1 `S1065 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES1070  1 e 1 @150 ]
+[s S821 . 1 `uc 1 NVMIE 1 0 :1:0 
 `uc 1 CRCIE 1 0 :1:1 
 `uc 1 SCANIE 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -167,25 +295,65 @@ TMR2_PWM2OUT 30
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1153
-[u S233 . 1 `S224 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES233  1 e 1 @151 ]
-[s S633 . 1 `uc 1 . 1 0 :2:0 
+[u S830 . 1 `S821 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES830  1 e 1 @151 ]
+[s S1374 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TMR2IE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 CCP1IE 1 0 :1:5 
 `uc 1 CCP2IE 1 0 :1:6 
 ]
 "1207
-[u S639 . 1 `S633 1 . 1 0 ]
-[v _PIE2bits PIE2bits `VES639  1 e 1 @152 ]
-[s S73 . 1 `uc 1 CLB1IE0 1 0 :1:0 
+[u S1380 . 1 `S1374 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES1380  1 e 1 @152 ]
+[s S218 . 1 `uc 1 ADIE 1 0 :1:0 
+`uc 1 ADTIE 1 0 :1:1 
+]
+"1336
+[u S221 . 1 `S218 1 . 1 0 ]
+[v _PIE6bits PIE6bits `VES221  1 e 1 @156 ]
+[s S670 . 1 `uc 1 CLB1IE0 1 0 :1:0 
 `uc 1 CLB1IE1 1 0 :1:1 
 `uc 1 CLB1IE2 1 0 :1:2 
 `uc 1 CLB1IE3 1 0 :1:3 
 ]
 "1364
-[u S78 . 1 `S73 1 . 1 0 ]
-[v _PIE7bits PIE7bits `VES78  1 e 1 @157 ]
+[u S675 . 1 `S670 1 . 1 0 ]
+[v _PIE7bits PIE7bits `VES675  1 e 1 @157 ]
+"2226
+[v _TMR0L TMR0L `VEuc  1 e 1 @412 ]
+"2364
+[v _TMR0H TMR0H `VEuc  1 e 1 @413 ]
+"2618
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @414 ]
+[s S1212 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"2652
+[s S1218 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S1224 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[s S1230 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S1235 . 1 `S1212 1 . 1 0 `S1218 1 . 1 0 `S1224 1 . 1 0 `S1230 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES1235  1 e 1 @414 ]
+"2742
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @415 ]
 "3063
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @653 ]
 "3203
@@ -202,16 +370,16 @@ TMR2_PWM2OUT 30
 [v _T2PR T2PR `VEuc  1 e 1 @909 ]
 "4473
 [v _T2CON T2CON `VEuc  1 e 1 @910 ]
-[s S577 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1318 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "4509
-[s S581 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S1322 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
-[s S585 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S1326 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -219,7 +387,7 @@ TMR2_PWM2OUT 30
 `uc 1 T2CKPS1 1 0 :1:5 
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
-[s S593 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1334 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -228,17 +396,17 @@ TMR2_PWM2OUT 30
 `uc 1 CKPS2 1 0 :1:6 
 `uc 1 TMR2ON 1 0 :1:7 
 ]
-[u S602 . 1 `S577 1 . 1 0 `S581 1 . 1 0 `S585 1 . 1 0 `S593 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES602  1 e 1 @910 ]
+[u S1343 . 1 `S1318 1 . 1 0 `S1322 1 . 1 0 `S1326 1 . 1 0 `S1334 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1343  1 e 1 @910 ]
 "4619
 [v _T2HLT T2HLT `VEuc  1 e 1 @911 ]
-[s S670 . 1 `uc 1 MODE 1 0 :5:0 
+[s S1411 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CSYNC 1 0 :1:5 
 `uc 1 CPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "4654
-[s S675 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1416 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
@@ -246,52 +414,52 @@ TMR2_PWM2OUT 30
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 ]
-[s S683 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S1424 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CSYNC 1 0 :1:5 
 `uc 1 T2CPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
-[s S688 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S1429 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
-[u S694 . 1 `S670 1 . 1 0 `S675 1 . 1 0 `S683 1 . 1 0 `S688 1 . 1 0 ]
-[v _T2HLTbits T2HLTbits `VES694  1 e 1 @911 ]
+[u S1435 . 1 `S1411 1 . 1 0 `S1416 1 . 1 0 `S1424 1 . 1 0 `S1429 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES1435  1 e 1 @911 ]
 "4759
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @912 ]
 "4941
 [v _T2RST T2RST `VEuc  1 e 1 @913 ]
-[s S744 . 1 `uc 1 RSEL 1 0 :8:0 
+[s S1485 . 1 `uc 1 RSEL 1 0 :8:0 
 ]
 "4968
-[s S746 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S1487 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 `uc 1 RSEL4 1 0 :1:4 
 ]
-[s S752 . 1 `uc 1 T2RSEL 1 0 :8:0 
+[s S1493 . 1 `uc 1 T2RSEL 1 0 :8:0 
 ]
-[s S754 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S1495 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 `uc 1 T2RSEL4 1 0 :1:4 
 ]
-[u S760 . 1 `S744 1 . 1 0 `S746 1 . 1 0 `S752 1 . 1 0 `S754 1 . 1 0 ]
-[v _T2RSTbits T2RSTbits `VES760  1 e 1 @913 ]
-[s S31 . 1 `uc 1 BUSY 1 0 :1:0 
+[u S1501 . 1 `S1485 1 . 1 0 `S1487 1 . 1 0 `S1493 1 . 1 0 `S1495 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES1501  1 e 1 @913 ]
+[s S628 . 1 `uc 1 BUSY 1 0 :1:0 
 `uc 1 . 1 0 :6:1 
 `uc 1 EN 1 0 :1:7 
 ]
 "5583
-[s S35 . 1 `uc 1 . 1 0 :7:0 
+[s S632 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 CLBEN 1 0 :1:7 
 ]
-[u S38 . 1 `S31 1 . 1 0 `S35 1 . 1 0 ]
-[v _CLBCONbits CLBCONbits `VES38  1 e 1 @1292 ]
+[u S635 . 1 `S628 1 . 1 0 `S632 1 . 1 0 ]
+[v _CLBCONbits CLBCONbits `VES635  1 e 1 @1292 ]
 "5603
 [v _CLBSWINU CLBSWINU `VEuc  1 e 1 @1293 ]
 "5673
@@ -318,7 +486,7 @@ TMR2_PWM2OUT 30
 [v _NVMDATL NVMDATL `VEuc  1 e 1 @7310 ]
 "9001
 [v _NVMDATH NVMDATH `VEuc  1 e 1 @7311 ]
-[s S364 . 1 `uc 1 RD 1 0 :1:0 
+[s S961 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -327,13 +495,13 @@ TMR2_PWM2OUT 30
 `uc 1 NVMREGS 1 0 :1:6 
 ]
 "9075
-[u S372 . 1 `S364 1 . 1 0 ]
-[v _NVMCON1bits NVMCON1bits `VES372  1 e 1 @7312 ]
+[u S969 . 1 `S961 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES969  1 e 1 @7312 ]
 "9115
 [v _NVMCON2 NVMCON2 `VEuc  1 e 1 @7313 ]
 "9135
 [v _SCANCON0 SCANCON0 `VEuc  1 e 1 @7314 ]
-[s S266 . 1 `uc 1 MD 1 0 :2:0 
+[s S863 . 1 `uc 1 MD 1 0 :2:0 
 `uc 1 . 1 0 :1:2 
 `uc 1 INTM 1 0 :1:3 
 `uc 1 DABORT 1 0 :1:4 
@@ -342,11 +510,11 @@ TMR2_PWM2OUT 30
 `uc 1 EN 1 0 :1:7 
 ]
 "9155
-[s S274 . 1 `uc 1 MD0 1 0 :1:0 
+[s S871 . 1 `uc 1 MD0 1 0 :1:0 
 `uc 1 MD1 1 0 :1:1 
 ]
-[u S277 . 1 `S266 1 . 1 0 `S274 1 . 1 0 ]
-[v _SCANCON0bits SCANCON0bits `VES277  1 e 1 @7314 ]
+[u S874 . 1 `S863 1 . 1 0 `S871 1 . 1 0 ]
+[v _SCANCON0bits SCANCON0bits `VES874  1 e 1 @7314 ]
 "9207
 [v _SCANLADRL SCANLADRL `VEuc  1 e 1 @7315 ]
 "9227
@@ -355,11 +523,11 @@ TMR2_PWM2OUT 30
 [v _SCANHADRL SCANHADRL `VEuc  1 e 1 @7318 ]
 "9274
 [v _SCANHADRH SCANHADRH `VEuc  1 e 1 @7319 ]
-[s S292 . 1 `uc 1 DPS 1 0 :1:0 
+[s S889 . 1 `uc 1 DPS 1 0 :1:0 
 ]
 "9304
-[u S294 . 1 `S292 1 . 1 0 ]
-[v _SCANDPSbits SCANDPSbits `VES294  1 e 1 @7321 ]
+[u S891 . 1 `S889 1 . 1 0 ]
+[v _SCANDPSbits SCANDPSbits `VES891  1 e 1 @7321 ]
 "9314
 [v _SCANTRIG SCANTRIG `VEuc  1 e 1 @7322 ]
 "9341
@@ -388,7 +556,7 @@ TMR2_PWM2OUT 30
 [v _CRCXORT CRCXORT `VEuc  1 e 1 @7332 ]
 "10749
 [v _CRCCON0 CRCCON0 `VEuc  1 e 1 @7333 ]
-[s S148 . 1 `uc 1 FULL 1 0 :1:0 
+[s S745 . 1 `uc 1 FULL 1 0 :1:0 
 `uc 1 SHIFTM 1 0 :1:1 
 `uc 1 SETUP 1 0 :2:2 
 `uc 1 ACCMOD 1 0 :1:4 
@@ -397,7 +565,7 @@ TMR2_PWM2OUT 30
 `uc 1 CRCEN 1 0 :1:7 
 ]
 "10775
-[s S156 . 1 `uc 1 . 1 0 :1:0 
+[s S753 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LENDIAN 1 0 :1:1 
 `uc 1 SETUP0 1 0 :1:2 
 `uc 1 SETUP1 1 0 :1:3 
@@ -406,23 +574,223 @@ TMR2_PWM2OUT 30
 `uc 1 GO 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
-[u S165 . 1 `S148 1 . 1 0 `S156 1 . 1 0 ]
-[v _CRCCON0bits CRCCON0bits `VES165  1 e 1 @7333 ]
+[u S762 . 1 `S745 1 . 1 0 `S753 1 . 1 0 ]
+[v _CRCCON0bits CRCCON0bits `VES762  1 e 1 @7333 ]
 "10850
 [v _CRCCON1 CRCCON1 `VEuc  1 e 1 @7334 ]
-[s S246 . 1 `uc 1 PLEN 1 0 :5:0 
+[s S843 . 1 `uc 1 PLEN 1 0 :5:0 
 ]
 "10867
-[s S248 . 1 `uc 1 PLEN0 1 0 :1:0 
+[s S845 . 1 `uc 1 PLEN0 1 0 :1:0 
 `uc 1 PLEN1 1 0 :1:1 
 `uc 1 PLEN2 1 0 :1:2 
 `uc 1 PLEN3 1 0 :1:3 
 `uc 1 PLEN4 1 0 :1:4 
 ]
-[u S254 . 1 `S246 1 . 1 0 `S248 1 . 1 0 ]
-[v _CRCCON1bits CRCCON1bits `VES254  1 e 1 @7334 ]
+[u S851 . 1 `S843 1 . 1 0 `S845 1 . 1 0 ]
+[v _CRCCON1bits CRCCON1bits `VES851  1 e 1 @7334 ]
 "10902
 [v _CRCCON2 CRCCON2 `VEuc  1 e 1 @7335 ]
+"10961
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @7436 ]
+"11089
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @7437 ]
+"11224
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @7438 ]
+"11352
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @7439 ]
+"11487
+[v _ADERRL ADERRL `VEuc  1 e 1 @7440 ]
+"11615
+[v _ADERRH ADERRH `VEuc  1 e 1 @7441 ]
+"11750
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @7442 ]
+"11878
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @7443 ]
+"12013
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @7444 ]
+"12141
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @7445 ]
+"12278
+[v _ADACCL ADACCL `VEuc  1 e 1 @7446 ]
+"12406
+[v _ADACCH ADACCH `VEuc  1 e 1 @7447 ]
+"12534
+[v _ADACCU ADACCU `VEuc  1 e 1 @7448 ]
+"12590
+[v _ADCNT ADCNT `VEuc  1 e 1 @7449 ]
+"12718
+[v _ADRPT ADRPT `VEuc  1 e 1 @7450 ]
+"12853
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @7451 ]
+"12981
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @7452 ]
+"13116
+[v _ADRESL ADRESL `VEuc  1 e 1 @7453 ]
+"13244
+[v _ADRESH ADRESH `VEuc  1 e 1 @7454 ]
+"13364
+[v _ADPCH ADPCH `VEuc  1 e 1 @7455 ]
+"13429
+[v _ADACQL ADACQL `VEuc  1 e 1 @7457 ]
+"13557
+[v _ADACQH ADACQH `VEuc  1 e 1 @7458 ]
+"13649
+[v _ADCAP ADCAP `VEuc  1 e 1 @7459 ]
+"13708
+[v _ADPREL ADPREL `VEuc  1 e 1 @7460 ]
+"13836
+[v _ADPREH ADPREH `VEuc  1 e 1 @7461 ]
+"13928
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @7462 ]
+[s S123 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"13963
+[s S131 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S139 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+]
+[s S143 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[u S147 . 1 `S123 1 . 1 0 `S131 1 . 1 0 `S139 1 . 1 0 `S143 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES147  1 e 1 @7462 ]
+"14038
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @7463 ]
+[s S426 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 PCSC 1 0 :1:1 
+`uc 1 . 1 0 :3:2 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"14060
+[s S433 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+[u S439 . 1 `S426 1 . 1 0 `S433 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES439  1 e 1 @7463 ]
+"14110
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @7464 ]
+[s S241 . 1 `uc 1 MD 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"14147
+[s S246 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+[s S255 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+[s S259 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+[u S267 . 1 `S241 1 . 1 0 `S246 1 . 1 0 `S255 1 . 1 0 `S259 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES267  1 e 1 @7464 ]
+"14252
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @7465 ]
+[s S308 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"14287
+[s S312 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[s S320 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[s S324 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+[u S332 . 1 `S308 1 . 1 0 `S312 1 . 1 0 `S320 1 . 1 0 `S324 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES332  1 e 1 @7465 ]
+"14382
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @7466 ]
+[s S362 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 AOV 1 0 :1:7 
+]
+"14419
+[s S369 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+[s S378 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+[s S382 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 OV 1 0 :1:7 
+]
+[u S388 . 1 `S362 1 . 1 0 `S369 1 . 1 0 `S378 1 . 1 0 `S382 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES388  1 e 1 @7466 ]
+"14514
+[v _ADREF ADREF `VEuc  1 e 1 @7467 ]
+"14570
+[v _ADACT ADACT `VEuc  1 e 1 @7468 ]
+"14674
+[v _ADCLK ADCLK `VEuc  1 e 1 @7469 ]
+"14778
+[v _ADCG1A ADCG1A `VEuc  1 e 1 @7470 ]
+"14823
+[v _ADCG1B ADCG1B `VEuc  1 e 1 @7471 ]
+"14862
+[v _ADCG1C ADCG1C `VEuc  1 e 1 @7472 ]
 "14924
 [v _RA0PPS RA0PPS `VEuc  1 e 1 @7564 ]
 "14944
@@ -475,6 +843,19 @@ TMR2_PWM2OUT 30
 [v _IOCCN IOCCN `VEuc  1 e 1 @7846 ]
 "17429
 [v _IOCCF IOCCF `VEuc  1 e 1 @7847 ]
+[s S22 . 1 `uc 1 initFlag 1 0 :1:0 
+`uc 1 lowBattFlag 1 0 :1:1 
+]
+"13 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X/config_16F13145.h
+[v _stateFlag stateFlag `S22  1 e 1 0 ]
+"5 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\config_16F13145.c
+[v _ADC_triggerCnt ADC_triggerCnt `VEuc  1 e 1 0 ]
+"6
+[v _initCnt initCnt `VEus  1 e 2 0 ]
+"41 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\adc\src\adc.c
+[v _ADC_ConversionDoneCallback ADC_ConversionDoneCallback `*.37(v  1 s 2 ADC_ConversionDoneCallback ]
+"42
+[v _ADC_ThresholdCallback ADC_ThresholdCallback `*.37(v  1 s 2 ADC_ThresholdCallback ]
 "39 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\clb\src\clb1.c
 [v _start_clb_config start_clb_config `us  1 e 2 0 ]
 "40 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\nvm\src\nvm.c
@@ -483,22 +864,35 @@ TMR2_PWM2OUT 30
 [v _unlockKeyHigh unlockKeyHigh `VNEuc  1 s 1 unlockKeyHigh ]
 "38 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\system\src\interrupt.c
 [v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+"38 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_PeriodMatchCallback TMR0_PeriodMatchCallback `*.37(v  1 s 2 TMR0_PeriodMatchCallback ]
 "43 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr2.c
 [v _TMR2_PeriodMatchCallback TMR2_PeriodMatchCallback `*.37(v  1 s 2 TMR2_PeriodMatchCallback ]
-"41 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\main.c
+"42 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"64
+"69
+} 0
+"135 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_PeriodMatchCallbackRegister TMR0_PeriodMatchCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR0_PeriodMatchCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 0 ]
+"138
 } 0
 "39 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\system\src\system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"48
+"50
 } 0
 "50 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "72
+} 0
+"45 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"62
 } 0
 "38 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\system\src\pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
@@ -520,11 +914,11 @@ TMR2_PWM2OUT 30
 {
 "50
 } 0
-"71
+"105
 [v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
-"73
+"107
 } 0
 "43 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\crc\src\crc.c
 [v _CRC_Initialize CRC_Initialize `(v  1 e 1 0 ]
@@ -571,4 +965,55 @@ TMR2_PWM2OUT 30
 [v _CRC_IsScannerBusy CRC_IsScannerBusy `T(a  1 e 1 0 ]
 {
 "223
+} 0
+"44 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\adc\src\adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"116
+} 0
+"385
+[v _ADC_ThresholdCallbackRegister ADC_ThresholdCallbackRegister `(v  1 e 1 0 ]
+{
+[v ADC_ThresholdCallbackRegister@callback callback `*.37(v  1 p 2 0 ]
+"388
+} 0
+"59 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\system\src\interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"85
+} 0
+"126 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"133
+} 0
+"140
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
+{
+"143
+} 0
+"8 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\config_16F13145.c
+[v _USER_TMR0_ISR USER_TMR0_ISR `(v  1 e 1 0 ]
+{
+"26
+} 0
+"171 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\adc\src\adc.c
+[v _ADC_ConversionStart ADC_ConversionStart `(v  1 e 1 0 ]
+{
+"174
+} 0
+"423
+[v _ADC_ThresholdISR ADC_ThresholdISR `(v  1 e 1 0 ]
+{
+"435
+} 0
+"28 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\config_16F13145.c
+[v _USER_ADC_THRESHOLD_ISR USER_ADC_THRESHOLD_ISR `(v  1 e 1 0 ]
+{
+"32
+} 0
+"410 D:\Dropbox\Program\ForMicrochip\test\testCLB_BiLED_13145.X\mcc_generated_files\adc\src\adc.c
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+{
+"422
 } 0

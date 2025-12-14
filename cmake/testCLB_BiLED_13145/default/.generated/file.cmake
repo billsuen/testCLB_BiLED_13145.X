@@ -16,7 +16,9 @@ foreach(source_file ${testCLB_BiLED_13145_default_default_XC8_FILE_TYPE_assemble
 endforeach()
 
 set(testCLB_BiLED_13145_default_default_XC8_FILE_TYPE_compile
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config_16F13145.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/adc/src/adc.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/clb/src/clb1.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/crc/src/crc.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/nvm/src/nvm.c"
@@ -25,6 +27,7 @@ set(testCLB_BiLED_13145_default_default_XC8_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/system/src/interrupt.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/system/src/pins.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/system/src/system.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/timer/src/tmr0.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../mcc_generated_files/timer/src/tmr2.c")
 set_source_files_properties(${testCLB_BiLED_13145_default_default_XC8_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
 set(testCLB_BiLED_13145_default_default_XC8_FILE_TYPE_link)

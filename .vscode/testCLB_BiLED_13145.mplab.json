@@ -27,17 +27,12 @@
             "type": "toolchain",
             "provider": "microchip.toolchains:xc8@3.00",
             "properties": {
-                "HI-TECH-COMP.define-macros": [],
-                "HI-TECH-COMP.undefine-macros": [],
                 "HI-TECH-COMP.extra-include-directories": [
                     "\".\""
                 ],
                 "HI-TECH-COMP.asmlist": true,
                 "HI-TECH-COMP.optimization-level": "-O0",
                 "HI-TECH-COMP.optimization-assembler-files": true,
-                "HI-TECH-COMP.what-to-do": [
-                    "require"
-                ],
                 "HI-TECH-COMP.tentative-definitions": "-fno-common",
                 "HI-TECH-LINK.input-libraries": [
                     "m"
@@ -47,8 +42,6 @@
                 ],
                 "HI-TECH-LINK.fill-flash-options-how": "0",
                 "HI-TECH-LINK.fill-flash-options-seq": "",
-                "HI-TECH-LINK.additional-options-command-line": [],
-                "HI-TECH-LINK.opt-xc8-linker-serial": [],
                 "HI-TECH-COMP.disable-optimizations": true,
                 "HI-TECH-COMP.favor-optimization-for": "-speed,+space",
                 "HI-TECH-COMP.identifier-length": "255",
@@ -90,7 +83,10 @@
                 "linker.heap-size": "0",
                 "linker.remove-unused-sections": true,
                 "compiler++.isolate-each-function": true,
-                "compiler++.optimization-level": "-O1"
+                "compiler++.optimization-level": "-O1",
+                "HI-TECH-COMP.what-to-do": [
+                    "require"
+                ]
             }
         }
     ],
@@ -126,7 +122,13 @@
                 "mcc_generated_files/crc/src/crc.c",
                 "mcc_generated_files/clb/src/clbBitstream.S",
                 "mcc_generated_files/clb/src/clb1.c",
-                "mcc_generated_files/clb/clb1.h"
+                "mcc_generated_files/clb/clb1.h",
+                "mcc_generated_files/adc/adc.h",
+                "mcc_generated_files/adc/adc_types.h",
+                "mcc_generated_files/adc/src/adc.c",
+                "mcc_generated_files/timer/src/tmr0.c",
+                "mcc_generated_files/timer/tmr0.h",
+                "mcc_generated_files/timer/tmr0_deprecated.h"
             ],
             "encoding": "ISO-8859-1"
         }

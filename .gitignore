@@ -12,6 +12,15 @@ _build/
 *.p1
 *.o
 
+out/
+*.cmf
+*.elf
+*.hxl
+*.lst
+*.o
+*.rlf
+*.sym
+
 # CMake build files
 cmake/**/.generated/
 cmake/**/CMakeFiles/

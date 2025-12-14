@@ -12,3 +12,16 @@
 77	1148	7872120628006231	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/system/src/interrupt.c.p1	3d484f3799798bcf
 115	1169	7872120628376209	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/timer/src/tmr2.c.p1	7880369f5bfb76be
 1169	2858	7872120638926221	D:/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/out/testCLB_BiLED_13145/default.elf	ce929228cd331a32
+14	46	7873759812497883	clean	36a2ac40f71f8f46
+25	2591	7873759814540585	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_assemblePreprocess.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/clb/src/clbBitstream.S.o	b853d23dec907d1c
+222	3520	7873759816514884	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/system/src/config_bits.c.p1	59986336e24eaecb
+49	3951	7873759814790726	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/main.c.p1	2a0fb6fb9b1142b8
+145	4041	7873759815747295	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/nvm/src/nvm.c.p1	d19e1195a83ac83f
+92	4177	7873759815216493	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/clb/src/clb1.c.p1	fde4fd8684b8c0e5
+353	4345	7873759817820522	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/timer/src/tmr2.c.p1	93865fb6d3b9d177
+188	4367	7873759816176453	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/system/src/clock.c.p1	b90750103906101d
+114	4370	7873759815429784	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/crc/src/crc.c.p1	7df67c8fe81039e6
+315	4393	7873759817441054	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/system/src/system.c.p1	8294d835a02d680b
+287	4466	7873759817161012	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/system/src/pins.c.p1	ee3b44b058ae8713
+256	4526	7873759816859368	CMakeFiles/testCLB_BiLED_13145_default_default_XC8_compile.dir/D_/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/mcc_generated_files/system/src/interrupt.c.p1	2a901510565812af
+4527	8085	7873759859568291	D:/Dropbox/Program/ForMicrochip/test/testCLB_BiLED_13145.X/out/testCLB_BiLED_13145/default.elf	209ecf56057e05d4

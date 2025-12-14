@@ -65,11 +65,13 @@ int main(void)
     while(1)
     {
 		if(!initFlag)
-			IND_LAT = 0;
+			IND_LAT = IND_ON;
 		else
-			IND_LAT = 1;
-		
-		if(lowBattFlag)
-			IND_LAT = 0;
+		{
+			if(lowBattFlag)
+				IND_LAT = IND_ON;
+			else
+				IND_LAT = IND_OFF;
+		}
     }    
 }

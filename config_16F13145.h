@@ -15,6 +15,9 @@ struct
 #define initFlag	stateFlag.initFlag
 #define lowBattFlag	stateFlag.lowBattFlag
 
+#define	IND_ON	0
+#define IND_OFF	1
+
 #define ADC_TRIGGER_SETTING	60	// Number of TMR0 overflows before starting an ADC conversion
 
 extern volatile uint8_t	ADC_triggerCnt;
